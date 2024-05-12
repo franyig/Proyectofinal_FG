@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "title": "Bubbles",
+        "description": "Frutos rojos - 155 gr.",
+        "imageUrl": "imagenes/bubbles.png",
+        "price": "$5500"
+    },
+    {
+        "id": 2,
+        "title": "Calavera",
+        "description": "Maracuyá - 330 gr.",
+        "imageUrl": "imagenes/calavera.png",
+        "price": "$13000"
+    },
+    {
+        "id": 3,
+        "title": "Corazón",
+        "description": "Chocolate - 110 gr.",
+        "imageUrl": "imagenes/corazon.png",
+        "price": "$4000"
+    },
+    {
+        "id": 4,
+        "title": "Fantasma",
+        "description": "Naranja - 90 gr.",
+        "imageUrl": "imagenes/fantasma.png",
+        "price": "$4500"
+    },
+    {
+        "id": 5,
+        "title": "Gato",
+        "description": "Eucalipto - 180 gr.",
+        "imageUrl": "imagenes/gato.png",
+        "price": "$7000"
+    },
+    {
+        "id": 6,
+        "title": "Groot",
+        "description": "Vainilla - 75 gr.",
+        "imageUrl": "imagenes/groot.png",
+        "price": "$3500"
+    },
+    {
+        "id": 7,
+        "title": "Torso Hombre",
+        "description": "Lavanda - 95 gr.",
+        "imageUrl": "imagenes/hombre.png",
+        "price": "$4500"
+    },
+    {
+        "id": 8,
+        "title": "Torso Mujer",
+        "description": "Coco - 95 gr.",
+        "imageUrl": "imagenes/mujer.png",
+        "price": "$4500"
+    }
+]

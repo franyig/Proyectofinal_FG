@@ -1,0 +1,289 @@
+body {
+    font-family: 'GaleriagaleriaPoppins', sans-serif;
+    background-color: rgb(243, 243, 243);
+
+    p {
+        line-height: 1.5;
+        margin: 0px;
+    }
+}
+
+header {
+    background-color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+.bannerprincipal {
+    background-image: url(https://content.revistainteriores.es/medio/2023/12/12/velas-aromaticas-artesanales_12a5b249_231212164152_1200x630.jpg?crop=0.8892778993435448xw:1xh;center,top&resize=1200:*);
+    background-size: cover;
+    height: 50vh;
+    align-items: center;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.665);
+    background-blend-mode: soft-light;
+
+}
+
+.bannerprincipal .contenedortextobanner {
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.bannerprincipal .titulobanner {
+    font-size: 40px;
+}
+
+.bannerprincipal .textobanner {
+    max-width: 700px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.envio-gratis {
+    position: absolute;
+    bottom: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e67e22;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    animation: move 2s infinite alternate;
+}
+
+
+@keyframes move {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(-55%);
+    }
+}
+
+.sectioncards {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 0px;
+} 
+
+.card {
+    transition: 250ms;
+    height: 100%;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card .titulocard {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 992px) {
+    .card .titulocard {
+        font-size: 18px;
+    }
+}
+
+.card .textocard {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+    .card .textocard {
+        font-size: 14px;
+    }
+}
+
+.card .imagencard {
+    border-radius: 10px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .card .imagencard {
+        border-radius: 5px;
+        height: 140px;
+    }
+}
+
+.card:hover {
+    transition: 250ms;
+    transform: translateY(-5px);
+    height: 100%;
+    transform: scale(1.02);
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        height: 100%;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) and (max-width: 992px) {
+    .card:hover {
+        transition: 250ms;
+        transform: translateY(0px);
+        height: 100%;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+
+
+
+.boton {
+    transition: 250ms;
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #121213;
+    align-items: center;
+    height: 48px;
+    border: solid 1px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+    transition: 250ms;
+    background-color: #121213;
+    color: #ffffff;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+}
+
+@media screen and (max-width: 992px) {
+    .boton {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) and (max-width: 992px) {
+    .boton:hover {
+        transition: 500ms;
+        background-color: #121213;
+        color: #ffffff;
+        width: 100%;
+        height: 48px;
+        border-radius: 8px;
+        border: none;
+    }
+}
+
+.preciocard {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.pop-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.pop-up-content {
+    text-align: center;
+}
+
+.pop-up img {
+    border-radius: 10px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+}
+
+
+
+.carrito-section {
+    font-family: 'GaleriagaleriaPoppins', sans-serif;
+    background-color: rgb(243, 243, 243);
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-section h1 {
+    margin: 0;
+}
+
+.carrito-section p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+#lista-carrito .eliminar-producto {
+    color: red;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
